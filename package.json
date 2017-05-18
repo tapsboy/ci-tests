@@ -1,0 +1,19 @@
+{
+  "name": "ci-tests",
+  "version": "1.0.0",
+  "description": "[ ![Codeship Status for tapsboy/ci-tests](https://app.codeship.com/projects/8a1b5160-d7d7-0134-9a91-3a8f38152395/status?branch=master)](https://app.codeship.com/projects/203131)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapsboy/ci-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tapsboy/ci-tests/issues"
+  },
+  "homepage": "https://github.com/tapsboy/ci-tests#readme"
+}
