@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/tapsboy/ci-tests.git"
   },
-  "author": "",
+  "author": "Tapan Shah",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tapsboy/ci-tests/issues"
