@@ -5,5 +5,3 @@ install:
   - yarn install
 before_script:
   - yarn danger ci
-script:
-  - yarn test
