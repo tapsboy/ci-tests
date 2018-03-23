@@ -2,8 +2,8 @@ language: node_js
 node_js:
   - "node"
 install:
-  - npm install
+  - yarn install
 before_script:
-  - npm run danger ci
+  - yarn danger ci
 script:
-  - npm test
+  - yarn test
