@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tapsboy/ci-tests/issues"
   },
-  "homepage": "https://github.com/tapsboy/ci-tests#readme"
+  "homepage": "https://github.com/tapsboy/ci-tests#readme",
+  "devDependencies": {
+    "danger": "^3.3.2"
+  }
 }
