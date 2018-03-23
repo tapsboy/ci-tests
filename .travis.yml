@@ -1,1 +1,5 @@
+language:
+ - node
 
+before_script:
+- npm run danger ci
