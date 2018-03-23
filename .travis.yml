@@ -1,4 +1,9 @@
-language: nodejs
-
+language: node_js
+node_js:
+  - "node"
+install:
+  - npm install
 before_script:
-- npm run danger ci
+  - npm run danger ci
+script:
+  - npm test
