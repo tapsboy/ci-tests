@@ -1,8 +1,9 @@
 {
-  "name": "ci-tests",
   "alias": "ci-tests",
   "type": "static",
   "static": {
-    "trailingSlash": true
+    "public": "dist",
+    "cleanUrls": false,
+    "directoryListing": false
   }
 }
