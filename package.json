@@ -2,7 +2,7 @@
   "name": "ci-tests",
   "version": "1.0.0",
   "description": "Test CI Tools",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"This is where tests will run\" && exit 1",
     "start": "node index.js"
