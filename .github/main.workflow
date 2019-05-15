@@ -10,5 +10,5 @@ action "debug" {
 action "actions/bin/sh@master" {
   uses = "actions/bin/sh@master"
   needs = ["debug"]
-  args = "args = [\"echo $GITHUB_EVENT_PATH\"]"
+  args = "[\"echo $GITHUB_EVENT_PATH\"]"
 }
