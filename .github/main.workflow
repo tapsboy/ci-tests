@@ -1,8 +1,8 @@
 workflow "Launch the rescue mission" {
   on = "release"
-  resolves = ["debug", "Ignition sequence"]
+  resolves = ["debug"]
 }
 
 action "debug" {
-  uses = "actions/bin/debug"
+  uses = "actions/bin/debug@master"
 }
