@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/tapsboy/ci-tests#readme",
   "devDependencies": {
-    "danger": "^7.1.3"
+    "danger": "^7.1.3",
+    "storybook-chromatic": "^1.3.3"
   }
 }
