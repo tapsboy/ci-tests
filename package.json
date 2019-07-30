@@ -20,6 +20,6 @@
   "homepage": "https://github.com/tapsboy/ci-tests#readme",
   "devDependencies": {
     "danger": "^8.0.0",
-    "storybook-chromatic": "^1.3.3"
+    "storybook-chromatic": "^2.0.0"
   }
 }
