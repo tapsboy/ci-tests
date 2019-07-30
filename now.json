@@ -1,9 +1,7 @@
 {
+  "name": "ci-tests",
   "alias": "ci-tests",
-  "type": "static",
-  "static": {
-    "public": "dist",
-    "cleanUrls": false,
-    "directoryListing": false
-  }
+  "builds": [
+    { "src": "index.html", "use": "@now/static" },
+  ]
 }
