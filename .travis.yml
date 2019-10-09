@@ -1,10 +1,21 @@
 language: node_js
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: false
 node_js:
-  - "node"
+  - "12"
+  - "11"
+  - "10"
 install:
   - yarn install
+  - yarn global add codecov
 before_script:
   - yarn danger ci
 script:
   - yarn build
+  - yarn lint
+  - yarn test
+  - codecov
   - bash <(curl -s https://peek.run/ci)

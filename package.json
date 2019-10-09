@@ -4,9 +4,14 @@
   "description": "Test CI Tools",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"This is where tests will run\" && exit 1",
+    "lint": "eslint src tests",
+    "lint:fix": "eslint -fix src tests",
+    "test": "jest --config jest.json --coverage",
     "start": "node index.js",
-    "build": "mkdir -p public && mv index.html public/"
+    "build": "mkdir -p public && mkdir -p public/js && mv index.html public/ && mv src/* public/js/",
+    "version": "npm version `auto version` -m 'Bump version to: %s [skip ci]'",
+    "publish": "npm publish && git push --follow-tags --set-upstream origin $branch",
+    "release": "auto changelog && npm run version && npm run publish && auto release"
   },
   "repository": {
     "type": "git",
@@ -19,7 +24,13 @@
   },
   "homepage": "https://github.com/tapsboy/ci-tests#readme",
   "devDependencies": {
+    "@auto-it/conventional-commits": "^7.8.0",
+    "auto": "^7.8.0",
     "danger": "^9.1.4",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
     "storybook-chromatic": "^2.0.0"
   }
 }
