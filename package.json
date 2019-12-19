@@ -13,6 +13,32 @@
     "publish": "npm publish && git push --follow-tags --set-upstream origin $branch",
     "release": "auto changelog && npm run version && npm run publish && auto release"
   },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      "@semantic-release/github"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]nn${nextRelease.notes}"
+      }
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tapsboy/ci-tests.git"
@@ -25,12 +51,16 @@
   "homepage": "https://github.com/tapsboy/ci-tests#readme",
   "devDependencies": {
     "@auto-it/conventional-commits": "^9.0.0",
+    "@auto-it/conventional-commits": "^8.6.1",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^7.0.18",
     "auto": "^8.6.1",
     "danger": "^10.0.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "jest": "^24.9.0",
     "prettier": "^2.0.0",
+    "semantic-release": "^15.13.31",
     "storybook-chromatic": "^3.4.1"
   }
 }
