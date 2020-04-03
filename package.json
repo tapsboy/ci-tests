@@ -25,7 +25,7 @@
   "homepage": "https://github.com/tapsboy/ci-tests#readme",
   "devDependencies": {
     "@auto-it/conventional-commits": "^9.0.0",
-    "auto": "^8.6.1",
+    "auto": "^9.25.1",
     "danger": "^10.0.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
