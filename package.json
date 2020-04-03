@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/tapsboy/ci-tests#readme",
   "devDependencies": {
-    "@auto-it/conventional-commits": "^8.6.1",
+    "@auto-it/conventional-commits": "^9.0.0",
     "auto": "^8.6.1",
     "danger": "^9.2.9",
     "eslint": "^6.7.2",
