@@ -31,6 +31,6 @@
     "eslint-config-airbnb": "^18.0.1",
     "jest": "^24.9.0",
     "prettier": "^2.0.0",
-    "storybook-chromatic": "^3.4.1"
+    "storybook-chromatic": "^4.0.2"
   }
 }
