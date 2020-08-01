@@ -1,7 +1,0 @@
-{
-  "name": "ci-tests",
-  "alias": "ci-tests",
-  "builds": [
-    { "src": "index.html", "use": "@now/static" },
-  ]
-}
