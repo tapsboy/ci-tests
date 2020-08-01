@@ -50,16 +50,16 @@
   },
   "homepage": "https://github.com/tapsboy/ci-tests#readme",
   "devDependencies": {
-    "@auto-it/conventional-commits": "^9.0.0",
-    "@semantic-release/changelog": "^3.0.6",
-    "@semantic-release/git": "^7.0.18",
-    "auto": "^8.6.1",
-    "danger": "^10.0.0",
-    "eslint": "^6.7.2",
-    "eslint-config-airbnb": "^18.0.1",
-    "jest": "^24.9.0",
-    "prettier": "^2.0.0",
-    "semantic-release": "^15.13.31",
-    "storybook-chromatic": "^3.4.1"
+    "@auto-it/conventional-commits": "^9.49.3",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "auto": "^9.49.3",
+    "danger": "^10.3.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "jest": "^26.2.2",
+    "prettier": "^2.0.5",
+    "semantic-release": "^17.1.1",
+    "storybook-chromatic": "^4.0.2"
   }
 }
