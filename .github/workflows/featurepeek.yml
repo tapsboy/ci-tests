@@ -20,6 +20,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Ping FeaturePeek
-      run: bash <(curl -s https://peek.run/ci) -p docker.pkg.github.com//frontend:latest
+      run: bash <(curl -s https://peek.run/ci) -p docker.pkg.github.com/tapsboy/ci-tests/node:latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
