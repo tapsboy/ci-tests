@@ -6,5 +6,8 @@
 
 [![CircleCI](https://circleci.com/gh/tapsboy/ci-tests.svg?style=svg)](https://circleci.com/gh/tapsboy/ci-tests)
 
-[![Run Status](https://api.shippable.com/projects/58a7f266cb4ab90f00fc2707/badge?branch=master)](https://app.shippable.com/projects/58a7f266cb4ab90f00fc2707) [![Greenkeeper badge](https://badges.greenkeeper.io/tapsboy/ci-tests.svg)](https://greenkeeper.io/)
+[![Run Status](https://api.shippable.com/projects/58a7f266cb4ab90f00fc2707/badge?branch=master)](https://app.shippable.com/projects/58a7f266cb4ab90f00fc2707) 
 
+[![Known Vulnerabilities](https://snyk.io/test/github/tapsboy/ci-tests/badge.svg)](https://snyk.io/test/github/tapsboy/ci-tests)
+
+![Node.js CI/CD](https://github.com/tapsboy/ci-tests/workflows/workflows/.github/workflows/buildandpublish.yml/badge.svg?branch=master)
