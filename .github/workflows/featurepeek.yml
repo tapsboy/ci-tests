@@ -15,7 +15,7 @@ jobs:
       run: docker login -u tapsboy -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
     - name: Build and push image
       run: |
-        docker build -t tapsboy/noci-tests-node:latest .
+        docker build -t tapsboy/ci-tests-node:latest .
         docker push tapsboy/ci-tests-node:latest
     - name: Ping FeaturePeek
       run: bash <(curl -s https://peek.run/ci) -p docker.pkg.github.com//frontend:latest
