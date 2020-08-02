@@ -7,7 +7,7 @@
     "lint": "eslint src tests",
     "lint:fix": "eslint -fix src tests",
     "test": "jest --config jest.json --coverage",
-    "start": "node index.js",
+    "start": "node server.js",
     "build": "mkdir -p public && mkdir -p public/js && mv index.html public/ && mv src/* public/js/",
     "version": "npm version `auto version` -m 'Bump version to: %s [skip ci]'",
     "publish": "npm publish && git push --follow-tags --set-upstream origin $branch",

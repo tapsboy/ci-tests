@@ -5,6 +5,6 @@ const server = http.createServer(function (request, response) {
   response.end("CI Tests: Hello from server.js\n");
 });
 
-server.listen(80);
+server.listen(8080);
 
-console.log('Server running at http://127.0.0.1:80/');
+console.log('Server running at http://localhost:8080/');
