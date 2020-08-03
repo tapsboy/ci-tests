@@ -6,7 +6,7 @@ const server = http.createServer(function (request, response) {
   response.end(`
   CI Tests: Hello from server.js.
   Attempt new feature PR with FeaturePeek.
-  Attempt Cypress integration`);
+  Attempting Cypress integration`);
 });
 
 server.listen(8080);
