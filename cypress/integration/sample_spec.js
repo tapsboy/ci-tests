@@ -22,5 +22,6 @@ describe('My Fourth Test', () => {
     cy.visit('https://www.history.com');
     cy.contains('Shows').click();
     cy.url().should('include', '/shows');
+    cy.contains('All Shows');
   })
 })
