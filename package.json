@@ -4,14 +4,15 @@
   "description": "Test CI Tools",
   "main": "server.js",
   "scripts": {
+    "build": "mkdir -p public && mkdir -p public/js && mv index.html public/ && mv src/* public/js/",
+    "cypress:open": "cypress open",
     "lint": "eslint src tests",
     "lint:fix": "eslint -fix src tests",
-    "test": "jest --config jest.json --coverage",
-    "start": "node server.js",
-    "build": "mkdir -p public && mkdir -p public/js && mv index.html public/ && mv src/* public/js/",
-    "version": "npm version `auto version` -m 'Bump version to: %s [skip ci]'",
     "publish": "npm publish && git push --follow-tags --set-upstream origin $branch",
-    "release": "auto changelog && npm run version && npm run publish && auto release"
+    "release": "auto changelog && npm run version && npm run publish && auto release",
+    "start": "node server.js",
+    "test": "jest --config jest.json --coverage",
+    "version": "npm version `auto version` -m 'Bump version to: %s [skip ci]'"
   },
   "release": {
     "plugins": [
@@ -54,9 +55,11 @@
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "auto": "^9.49.3",
+    "cypress": "^4.11.0",
     "danger": "^10.3.0",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-cypress": "^2.11.1",
     "jest": "^26.2.2",
     "prettier": "^2.0.5",
     "semantic-release": "^17.1.1",
