@@ -12,15 +12,12 @@ jobs:
         node-version: 12.x
 
     - name: Docker login
-      run: docker login -u tapsboy -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
+      run: docker login -u  -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
     - name: Build and push image
       run: |
-        docker build -t docker.pkg.github.com/tapsboy/ci-tests/node:latest .
-        docker push docker.pkg.github.com/tapsboy/ci-tests/node:latest
+        docker build -t docker.pkg.github.com//frontend:latest .
+        docker push docker.pkg.github.com//frontend:latest
+    - name: Ping FeaturePeek
+      run: bash <(curl -s https://peek.run/ci) -p docker.pkg.github.com//frontend:latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Ping FeaturePeek
-      run: bash <(curl -s https://peek.run/ci) -p docker.pkg.github.com/tapsboy/ci-tests/node:latest
-      env:
-        CI: true
-        GITHUB_TOKEN: ${{ secrets.FEATUREPEEK_TOKEN }}
