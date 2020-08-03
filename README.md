@@ -12,4 +12,8 @@
 
 ![Node.js CI/CD](https://github.com/tapsboy/ci-tests/workflows/workflows/.github/workflows/buildandpublish.yml/badge.svg?branch=master)
 
-[![ci-tests](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/14uxih&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/14uxih/runs)
+[![ci-tests](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/juhc8f/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/juhc8f/runs)
+
+
+
+### More badges needed
