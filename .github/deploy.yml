@@ -1,0 +1,11 @@
+staging:
+  # Auto deploy on master.
+  auto_deploy_on: refs/heads/master
+  # Wait for our ci pipeline to pass.
+  required_contexts: ["ci"]
+  environment: staging
+
+production:
+  production_environment: true
+  required_contexts: ["ci"]
+  environment: production
