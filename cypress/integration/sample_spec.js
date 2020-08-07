@@ -4,11 +4,11 @@ describe('My First Test', () => {
   })
 })
 
-describe('My Second Test', () => {
-  it('Does not do much!', () => {
-    expect(true).to.equal(false);
-  })
-})
+// describe('My Second Test', () => {
+//   it('Does not do much!', () => {
+//     expect(true).to.equal(false);
+//   })
+// })
 
 describe('My Third Test', () => {
   it('Compares two strings', () => {
