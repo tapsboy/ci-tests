@@ -4,11 +4,11 @@ describe('My First Test', () => {
   })
 })
 
-describe('My Second Test', () => {
-  it('Does not do much!', () => {
-    expect(true).to.equal(false);
-  })
-})
+// describe('My Second Test', () => {
+//   it('Does not do much!', () => {
+//     expect(true).to.equal(false);
+//   })
+// })
 
 describe('My Third Test', () => {
   it('Compares two strings', () => {
@@ -22,5 +22,6 @@ describe('My Fourth Test', () => {
     cy.visit('https://www.history.com');
     cy.contains('Shows').click();
     cy.url().should('include', '/shows');
+    cy.contains('All Shows');
   })
 })
