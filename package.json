@@ -63,7 +63,7 @@
     "eslint-plugin-cypress": "^2.11.1",
     "jest": "^26.2.2",
     "prettier": "^2.0.5",
-    "semantic-release": "^17.1.1",
+    "semantic-release": "^17.2.3",
     "storybook-chromatic": "^4.0.2"
   }
 }
